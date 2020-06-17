@@ -10,9 +10,7 @@ const router = express.Router();
 
 // root for the app with passed in request and response
 router.get("/", (req, res) => {
-    res.json({
-        'hello': 'hi!'
-    });
+    res.sendFile('index.html', { root: '/Users/apple/Desktop/1_Studium/1_Veranstaltungen/5. Semester/Mobile Medien/ExamRegistration/src/' });
 });
 
 /* extra endpoint test
@@ -29,5 +27,4 @@ router.get('/test', (req, res) => {
 app.use('/.netlify/functions/api', router);
 
 // export handler function for enabling executable to run (lambda file)
-module.exports = app;
 module.exports.handler = serverless(app);
