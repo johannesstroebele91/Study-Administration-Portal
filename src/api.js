@@ -9,22 +9,25 @@ const app = express();
 const router = express.Router();
 
 // root for the app with passed in request and response
-router.get('/', (req, res) => {
+router.get("/", (req, res) => {
     res.json({
         'hello': 'hi!'
     });
 });
 
-// extra endpoint
+/* extra endpoint test
 router.get('/test', (req, res) => {
     res.json({
         'hello': 'test!'
     });
 });
+*/
 
-// handler function for enabling executable to run (lambda file)
-module.exports.handler = serverless(app);
-
-// router is bound into the app
-// tell Netlify which files should be served (Netlify puts all functions into /.netlify/functions)
+// bind router into the app
+// tell router where its bound to (Netlify puts all functions into /.netlify/functions)
+// the router knows that it lives at this route /.netlify/functions/api
 app.use('/.netlify/functions/api', router);
+
+// export handler function for enabling executable to run (lambda file)
+module.exports = app;
+module.exports.handler = serverless(app);
