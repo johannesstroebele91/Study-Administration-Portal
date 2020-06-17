@@ -1,0 +1,41 @@
+{
+  "name": "exam-registration",
+  "version": "1.0.0",
+  "description": "A responsive web application for enabling students to manage their exams in the student portal of the Stuttgart Media University",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "express": "^4.17.1",
+    "jquery": "^3.5.1",
+    "netlify-lambda": "^1.6.3",
+    "popper.js": "^1.14.3",
+    "serverless-http": "^2.5.0",
+    "fsevents": "^2.1.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "./node_modules/.bin/netlify-lambda serve src",
+    "build": "./node_modules/.bin/netlify-lambda build src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johannesstroebele91/ExamRegistration.git"
+  },
+  "keywords": [
+    "web",
+    "application",
+    "bootstrap",
+    "responsive",
+    "tables",
+    "university",
+    "exam",
+    "registration"
+  ],
+  "author": "Johannes Stroebele",
+  "bugs": {
+    "url": "https://github.com/johannesstroebele91/ExamRegistration/issues"
+  },
+  "homepage": "https://github.com/johannesstroebele91/ExamRegistration#readme"
+}
