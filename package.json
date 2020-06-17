@@ -7,9 +7,7 @@
   "dependencies": {
     "bootstrap": "^4.5.0",
     "express": "^4.17.1",
-    "jquery": "^3.5.1",
     "netlify-lambda": "^1.6.3",
-    "popper.js": "^1.14.3",
     "serverless-http": "^2.5.0",
     "fsevents": "^2.1.3"
   },
