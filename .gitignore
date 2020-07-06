@@ -1,3 +1,2 @@
-node_modules/
-
-functions/
+# Project exclude paths
+/node_modules/
