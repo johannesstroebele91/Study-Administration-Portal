@@ -10,11 +10,17 @@ $theme-colors: (
 
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: darkgrey !important;
+}
+
+p {
+  color: darkgrey !important;
 }
 
 h2 {
   padding-top: 24px;
   padding-bottom: 6px;
+  color: darkgrey !important;
 }
 
 td {

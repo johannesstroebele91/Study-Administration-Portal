@@ -1,9 +1,9 @@
 const express = require('express');
-const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const sassMiddleware = require('node-sass-middleware');
 const app = express();
+const path = require('path');
 const port = process.env.PORT || 8080;
 
 app.use(logger('dev'));
