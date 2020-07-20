@@ -1,8 +1,37 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: darkgrey !important;
+}
 
-a {
-  color: #00B7FF; }
+p {
+  color: darkgrey !important;
+}
 
-/*# sourceMappingURL=style.css.map */
+h2 {
+  padding-top: 24px;
+  padding-bottom: 6px;
+  color: darkgrey !important;
+}
+
+td {
+  padding-top: 12px;
+  padding-bottom: 6px;
+}
+
+.footer {
+  margin-top: 60px;
+  padding-top: 18px;
+  padding-bottom: 30px;
+}
+.footer a {
+  color: white;
+  text-decoration: underline;
+}
+
+.border-none {
+  border: none !important;
+}
+
+h1 {
+  color: red;
+}
