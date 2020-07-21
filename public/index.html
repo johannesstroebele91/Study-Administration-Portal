@@ -30,18 +30,9 @@
 <!-- Header -->
 <header id="nav-placeholder"></header>
 
-<form action="#">
-    <label for="email">Email</label>
-    <input id="email" type="email">
-    <label for="password">Password</label>
-    <input id="password" type="text">
-    <button onclick="myFunction()">Submit</button>
-</form>
-
-
 <!-- Begin page content -->
 <main role="main" class="container main-login">
-    <form>
+    <form action="#">
         <div class="text-center mb-4">
             <h1 class="h3 mb-3 font-weight-normal">Welcome Lisa!</h1>
             <p>This is the study administration portal of the Stuttgart Media University for lecturers, students, and
@@ -50,20 +41,17 @@
         </div>
 
         <div>
-            <label for="inputEmail">Email address</label>
-            <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required=""
-                   autofocus="">
+            <label for="email">Email address (test email: admin@gmail.com)</label>
+            <input id="email" type="email" class="form-control" placeholder="Insert your email here" required="" autofocus="">
         </div>
 
         <div>
-            <label for="inputPassword">Password</label>
-            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
+            <label for="password">Password (test password: password)</label>
+            <input id="password" type="text" class="form-control" placeholder="Insert your password here" required="">
         </div>
 
-        <!-- TODO fix login-->
-        <button class="button  btn-lg btn-block" type="submit" onclick="location.href='/dashboard';">
-            Sign in
-        </button>
+        <button class="button btn-lg btn-block" onclick="submitForm()">Submit</button>
+
         <div class="mb-3">
             <label>
                 <input type="checkbox" value="remember-me"> Remember me
