@@ -124,7 +124,45 @@ label {
     margin-top: 12px;
 }
 
-/* LOGIN */
+/* Always display scrollbar on mobile */
+.table-responsive::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.table-responsive::-webkit-scrollbar:vertical {
+    width: 12px;
+}
+
+.table-responsive::-webkit-scrollbar:horizontal {
+    height: 12px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+}
+
+.table-responsive::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+/* Table */
+.thead-dark > tr > th {
+    background: #E1003A !important;
+    border-bottom: #f78ba8 2px solid !important;
+}
+
+.thead-dark > tr {
+    border-top: #f78ba8 2px solid;
+}
+
+.thead-dark {
+    border-bottom: #f78ba8 2px solid !important;
+}
+
+/* Login */
 .main-login {
     margin: 24px 0 0 0;
     max-width: 576px !important;
@@ -137,3 +175,4 @@ label {
 .list-time {
     font-weight: bold;
 }
+

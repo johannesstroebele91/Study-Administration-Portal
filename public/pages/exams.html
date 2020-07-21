@@ -26,84 +26,87 @@
 
 <!-- Main -->
 <main role="main" class="container">
-    <h1 class="mt-5">Exams</h1>
+    <h1>Exams</h1>
+    <p>Here, you can see your registered exams and register courses for the current semester.</p>
 
-    <h2>Exams</h2>
-    <canvas id="barChartStudyProgress"></canvas>
-    <canvas id="pieChartStudyProgress"></canvas>
-    <table class="table">
-        <thead>
-        <tr>
-            <th>Register</th>
-            <th>Course</th>
-            <th>Deadline</th>
-            <th>Course ID</th>
-            <th>Degree</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td>
-                <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="customCheck1" checked>
-                    <label class="custom-control-label" for="customCheck1"></label>
-                </div>
-            </td>
-            <td>App Design</td>
-            <td>20.07.2020</td>
-            <td>53423</td>
-            <td>ID7</td>
-        </tr>
-        <tr>
-            <td>
-                <div class="custom-control custom-checkbox">
-                    <label class="custom-control-label" for="customCheck2"></label>
-                    <input type="checkbox" class="custom-control-input" id="customCheck2" checked>
-                </div>
-            </td>
-            <td>Mobile Media</td>
-            <td>20.07.2020</td>
-            <td>53423</td>
-            <td>ID7</td>
-        </tr>
-        <tr>
-            <td>
-                <div class="custom-control custom-checkbox">
-                    <label class="custom-control-label" for="customCheck3"></label>
-                    <input type="checkbox" class="custom-control-input" id="customCheck3" checked>
-                </div>
-            </td>
-            <td>App Design</td>
-            <td>20.07.2020</td>
-            <td>53423</td>
-            <td>ID7</td>
-        </tr>
-        <tr>
-            <td>
-                <div class="custom-control custom-checkbox">
-                    <label class="custom-control-label" for="customCheck4"></label>
-                    <input type="checkbox" class="custom-control-input" id="customCheck4" checked>
-                </div>
-            </td>
-            <td>Mobile Media</td>
-            <td>20.07.2020</td>
-            <td>53423</td>
-            <td>ID7</td>
-        </tr>
-        <tr>
-            <td>
-                <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="customCheck5" checked>
-                    <label class="custom-control-label" for="customCheck5"></label>
-                </div>
-            </td>
-            <td>App Design</td>
-            <td>20.07.2020</td>
-            <td>53423</td>
-            <td>ID7</td>
-        </tr>
-        </tbody>
-    </table>
+    <h2>Registered Exams</h2>
+    <p>This shows the exams that you have registered for Information Design in the current <b>summer semester
+        2020.</b></b></p>
+    <div class="table-responsive">
+        <table class="table">
+            <thead class="thead-dark">
+            <tr>
+                <th>Register</th>
+                <th>Course</th>
+                <th>Deadline</th>
+                <th>Course ID</th>
+                <th>Degree</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck1" checked>
+                        <label class="custom-control-label myCheckbox" for="customCheck1"></label>
+                    </div>
+                </td>
+                <td>App Design</td>
+                <td>20.07.2020</td>
+                <td>53423</td>
+                <td>ID7</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="custom-control custom-checkbox">
+                        <label class="custom-control-label" for="customCheck2"></label>
+                        <input type="checkbox" class="custom-control-input" id="customCheck2" checked>
+                    </div>
+                </td>
+                <td>Mobile Media</td>
+                <td>20.07.2020</td>
+                <td>53423</td>
+                <td>ID7</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="custom-control custom-checkbox">
+                        <label class="custom-control-label" for="customCheck3"></label>
+                        <input type="checkbox" class="custom-control-input" id="customCheck3" checked>
+                    </div>
+                </td>
+                <td>App Design</td>
+                <td>20.07.2020</td>
+                <td>53423</td>
+                <td>ID7</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="custom-control custom-checkbox">
+                        <label class="custom-control-label" for="customCheck4"></label>
+                        <input type="checkbox" class="custom-control-input" id="customCheck4" checked>
+                    </div>
+                </td>
+                <td>Mobile Media</td>
+                <td>20.07.2020</td>
+                <td>53423</td>
+                <td>ID7</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck5" checked>
+                        <label class="custom-control-label" for="customCheck5"></label>
+                    </div>
+                </td>
+                <td>App Design</td>
+                <td>20.07.2020</td>
+                <td>53423</td>
+                <td>ID7</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
 </main>
 
 <!-- Footer -->
@@ -116,7 +119,6 @@
 <script src="/scripts/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="/scripts/chart.js/dist/Chart.js"></script>
 <script src="../index.js"></script>
-<script src="../javascripts/exams-charts.js"></script>
 </body>
 
 </html>
