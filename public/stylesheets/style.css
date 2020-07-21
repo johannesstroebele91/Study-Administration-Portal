@@ -19,6 +19,10 @@ a {
     color: #E1003A !important;
 }
 
+.container {
+    max-width: 900px!important;
+}
+
 /* NAV */
 nav ul a {
     text-align: center;
@@ -112,6 +116,80 @@ footer {
     border: none;
 }
 
+@media (min-width: 768px) {
+    .button-table-search {
+        width: 240px;
+    }
+
+    .button-table-search > input {
+        width: 192px !important;
+    }
+
+    .buttons-distribution-table {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: stretch;
+    }
+}
+
+@media (max-width: 767px) {
+    .button-table-search {
+        width: 100%;
+    }
+
+    .button-table-search > input {
+        width: 100% !important;
+    }
+
+    .button-deregister-courses {
+        width: 100% !important;
+    }
+}
+
+.button-deregister-courses {
+    display: block;
+    background: white;
+    padding: 8px 24px;
+    border: 2px solid #E1003A;
+    border-radius: 3px;
+    color: #E1003A !important;
+    white-space:nowrap;
+}
+
+.button-delete-selected-courses > img{
+    padding-right: 9px;
+}
+
+.button-table-search {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    flex-flow: nowrap !important;
+    margin-right: 12px;
+    background: #E1003A;
+    border-radius: 3px;
+    border-top: 2px solid #E1003A;
+    border-bottom: 3px solid #E1003A;
+    border-left: 3px solid #E1003A;
+    border-right: 3px solid #E1003A;
+}
+
+
+.icon {
+    display: block;
+    background: #E1003A;
+    padding: 6px 12px 9px 12px;
+    border-radius: 3px;
+    color: white !important;
+    border: none;
+}
+
 .width-full {
     width: 100%;
 }
@@ -149,6 +227,13 @@ label {
 }
 
 /* Table */
+.headline-table {
+    font-size: 18px;
+    font-weight: normal;
+    white-space:nowrap;
+    margin-right: 12px;
+}
+
 .thead-dark > tr > th {
     background: #E1003A !important;
     border-bottom: #f78ba8 2px solid !important;
@@ -162,6 +247,20 @@ label {
     border-bottom: #f78ba8 2px solid !important;
 }
 
+.custom-checkbox {
+    top: -9px;
+    left: 24px;
+}
+
+input[type=checkbox] {
+    -ms-transform: scale(2); /* IE */
+    -moz-transform: scale(2); /* FF */
+    -webkit-transform: scale(2); /* Safari and Chrome */
+    -o-transform: scale(2); /* Opera */
+    transform: scale(2);
+    padding: 10px;
+}
+
 /* Login */
 .main-login {
     margin: 24px 0 0 0;
@@ -172,6 +271,7 @@ label {
 .list-group-item-action p {
     color: #545454;
 }
+
 .list-time {
     font-weight: bold;
 }

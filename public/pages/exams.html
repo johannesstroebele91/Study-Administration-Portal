@@ -27,16 +27,31 @@
 <!-- Main -->
 <main role="main" class="container">
     <h1>Exams</h1>
-    <p>Here, you can see your registered exams and register courses for the current semester.</p>
+    <p>Here, you can see your <b>registered exams</b>, your <b>passed exams</b>, and <b>register additional courses</b> for the current semester.</p>
 
     <h2>Registered Exams</h2>
-    <p>This shows the exams that you have registered for Information Design in the current <b>summer semester
-        2020.</b></b></p>
-    <div class="table-responsive">
-        <table class="table">
+    <p>This shows the exams that you have registered for Information Design
+        in the current <b>summer semester 2020.</b> You can <b>deregister a courses</b>
+        by selecting it from the list below and clicking on the button "Deregister Courses".</p>
+    <div class="my-2 buttons-distribution-table">
+        <span class="headline-table my-2"><b>Registered Courses (6)</b></span>
+        <form class="form-inline button-table-search my-2">
+            <input class="form-control" type="search" placeholder="Search Courses" aria-label="Search">
+            <button class="icon" type="submit"><img src="../assets/search.png" height="21px" alt="Search icon"></button>
+        </form>
+        <button class="button-deregister-courses my-2" type="submit">
+            <img src="../assets/delete.png" height="21px" alt="Delete icon">
+            Deregister Courses
+        </button>
+    </div>
+
+    <!-- TODO needs fixing
+    <div>
+        <p>hello</p>
+        <table id="table-mock-data">
             <thead class="thead-dark">
             <tr>
-                <th>Register</th>
+                <th>Deregister</th>
                 <th>Course</th>
                 <th>Deadline</th>
                 <th>Course ID</th>
@@ -44,69 +59,93 @@
             </tr>
             </thead>
             <tbody>
+            </tbody>
+        </table>
+        <p>hello</p>
+    </div> -->
+
+    <div class="table-responsive">
+        <table class="table">
+            <thead class="thead-dark">
             <tr>
-                <td>
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck1" checked>
-                        <label class="custom-control-label myCheckbox" for="customCheck1"></label>
-                    </div>
-                </td>
-                <td>App Design</td>
-                <td>20.07.2020</td>
-                <td>53423</td>
-                <td>ID7</td>
+                <th>Status</th>
+                <th>Name</th>
+                <th>Course ID</th>
+                <th>ECTS</th>
+                <th>Deadline</th>
+                <th>Area</th>
             </tr>
+            </thead>
+            <tbody>
             <tr>
                 <td>
                     <div class="custom-control custom-checkbox">
-                        <label class="custom-control-label" for="customCheck2"></label>
-                        <input type="checkbox" class="custom-control-input" id="customCheck2" checked>
-                    </div>
-                </td>
-                <td>Mobile Media</td>
-                <td>20.07.2020</td>
-                <td>53423</td>
-                <td>ID7</td>
-            </tr>
-            <tr>
-                <td>
-                    <div class="custom-control custom-checkbox">
-                        <label class="custom-control-label" for="customCheck3"></label>
-                        <input type="checkbox" class="custom-control-input" id="customCheck3" checked>
-                    </div>
-                </td>
-                <td>App Design</td>
-                <td>20.07.2020</td>
-                <td>53423</td>
-                <td>ID7</td>
-            </tr>
-            <tr>
-                <td>
-                    <div class="custom-control custom-checkbox">
-                        <label class="custom-control-label" for="customCheck4"></label>
-                        <input type="checkbox" class="custom-control-input" id="customCheck4" checked>
-                    </div>
-                </td>
-                <td>Mobile Media</td>
-                <td>20.07.2020</td>
-                <td>53423</td>
-                <td>ID7</td>
-            </tr>
-            <tr>
-                <td>
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck5" checked>
+                        <input type="checkbox" class="custom-control-input" id="customCheck5">
                         <label class="custom-control-label" for="customCheck5"></label>
                     </div>
                 </td>
                 <td>App Design</td>
-                <td>20.07.2020</td>
                 <td>53423</td>
-                <td>ID7</td>
+                <td>5</td>
+                <td>20.07.2020</td>
+                <td>Project</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck5">
+                        <label class="custom-control-label" for="customCheck5"></label>
+                    </div>
+                </td>
+                <td>App Design</td>
+                <td>53423</td>
+                <td>5</td>
+                <td>20.07.2020</td>
+                <td>Project</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck5">
+                        <label class="custom-control-label" for="customCheck5"></label>
+                    </div>
+                </td>
+                <td>App Design</td>
+                <td>53423</td>
+                <td>5</td>
+                <td>20.07.2020</td>
+                <td>Project</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck5">
+                        <label class="custom-control-label" for="customCheck5"></label>
+                    </div>
+                </td>
+                <td>App Design</td>
+                <td>53423</td>
+                <td>5</td>
+                <td>20.07.2020</td>
+                <td>Project</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck5">
+                        <label class="custom-control-label" for="customCheck5"></label>
+                    </div>
+                </td>
+                <td>App Design</td>
+                <td>53423</td>
+                <td>5</td>
+                <td>20.07.2020</td>
+                <td>Project</td>
             </tr>
             </tbody>
         </table>
     </div>
+
 </main>
 
 <!-- Footer -->
