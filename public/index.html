@@ -17,18 +17,18 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
     <link rel="stylesheet" type="text/css" href="/scripts/bootstrap/dist/css/bootstrap.css">
 
-    <!-- SCRIPTS -->
-    <script src="/scripts/jquery/dist/jquery.js"></script>
-    <script src="/scripts/popper.js/dist/umd/popper.js"></script>
-    <script src="/scripts/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="index.js"></script>
 </head>
 
 <!-- BODY -->
 <body class="d-flex flex-column min-vh-100 ">
 
 <!-- Header -->
-<header id="nav-placeholder"></header>
+<nav class="navbar navbar-light bg-light sticky-top justify-content-center">
+    <a class="navbar-brand" href="/">
+        <img src="assets/HdM_Logo_NoText.png" width="42" class="logo-picture d-inline-block align-top" alt="">
+        <span class="logo-text">Study Administration Portal</span>
+    </a>
+</nav>
 
 <!-- Begin page content -->
 <main role="main" class="container main-login">
@@ -42,7 +42,8 @@
 
         <div>
             <label for="email">Email address (test email: admin@gmail.com)</label>
-            <input id="email" type="email" class="form-control" placeholder="Insert your email here" required="" autofocus="">
+            <input id="email" type="email" class="form-control" placeholder="Insert your email here" required=""
+                   autofocus="">
         </div>
 
         <div>
@@ -50,7 +51,7 @@
             <input id="password" type="text" class="form-control" placeholder="Insert your password here" required="">
         </div>
 
-        <button class="button btn-lg btn-block" onclick="submitForm()">Submit</button>
+        <button class="button width-full" value="Send" type="submit" onclick="return submitForm()">Submit</button>
 
         <div class="mb-3">
             <label>
@@ -58,14 +59,18 @@
             </label>
         </div>
 
-        <a class="mt-5 mb-3" href="#">Forgot your username or password?</a>
+        <a class="mt-5 mb-3" href="/reset-credentials">Forgot your username or password?</a>
     </form>
 </main>
 
-<footer class="d-flex justify-content-around bg-light">
-    <a href="#">Legal Disclosure</a>
-    <span>Copyright © 2020 Stuttgart Media University</span>
-    <a href="#">Privacy Policy</a>
-</footer>
+<!-- Footer -->
+<div id="footer-placeholder"></div>
+
+<!-- SCRIPTS -->
+<script src="/scripts/jquery/dist/jquery.js"></script>
+<script src="/scripts/popper.js/dist/umd/popper.js"></script>
+<script src="/scripts/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="index.js"></script>
+
 </body>
 </html>

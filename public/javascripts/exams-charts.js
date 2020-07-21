@@ -1,12 +1,11 @@
-let barStudyProgress = document.getElementById('barStudyProgress').getContext('2d');
-
-// Global Options
+// Chart.js Global Styling Options
 Chart.defaults.global.defaultFontFamily = 'Lato';
 Chart.defaults.global.defaultFontsize = 18;
 Chart.defaults.global.defaultFontColor = '#777';
 
-
-let PrPopChart = new Chart(barStudyProgress, {
+// Bar Chart Study Progress
+let barChartStudyProgress = document.getElementById('barChartStudyProgress').getContext('2d');
+let BarChartStudyProgress = new Chart(barChartStudyProgress, {
     type: 'horizontalBar', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
     data: {
         datasets: [{
@@ -52,6 +51,6 @@ let PrPopChart = new Chart(barStudyProgress, {
             position: 'bottom',
         },
         responsive: true,
-        maintainAspectRatio: false
+        maintainAspectRatio: true
     }
 });

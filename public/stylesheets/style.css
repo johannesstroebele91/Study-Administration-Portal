@@ -16,19 +16,24 @@ h1, h2, h3, h4 {
 }
 
 a {
-    text-align: center;
     color: #E1003A !important;
 }
 
 /* NAV */
 nav ul a {
+    text-align: center;
     font-size: 16px !important;
     padding: 12px !important;
     color: #545454 !important;
 }
 
+.nav-profile-link {
+    padding: 0;
+    margin: 0;
+}
+
 @media (max-width: 992px) {
-    nav ul a {
+    nav ul li:not(:last-child) {
         border-bottom: #f4f4f4 2px solid;
     }
 }
@@ -39,6 +44,32 @@ nav a:hover, .logo-text:hover {
 
 nav .border-none {
     border: none !important;
+}
+
+nav li:hover a {
+    cursor: pointer;
+}
+
+@media (max-width: 992px) {
+    #nav-profile-mobile {
+        display: none;
+    }
+
+    #nav-profile-desktop {
+        display: inline-block;
+    }
+}
+
+@media (min-width: 993px) {
+    #nav-profile-mobile {
+        display: inline-block;
+        cursor: pointer;
+        height: 36px;
+    }
+
+    #nav-profile-desktop {
+        display: none;
+    }
 }
 
 .logo-picture {
@@ -63,10 +94,26 @@ footer {
 
 /* BUTTONS */
 .button {
+    display: block;
     background: #E1003A;
-  margin: 24px 0 12px 0;
+    padding: 12px 36px;
+    margin: 24px 0 6px 0;
+    border-radius: 3px;
     color: white;
     border: none;
+}
+
+.button-small {
+    display: block;
+    background: #E1003A;
+    padding: 6px 36px;
+    border-radius: 3px;
+    color: white !important;
+    border: none;
+}
+
+.width-full {
+    width: 100%;
 }
 
 .button:hover {
@@ -74,11 +121,19 @@ footer {
 }
 
 label {
-  margin-top: 12px;
+    margin-top: 12px;
 }
 
 /* LOGIN */
 .main-login {
-  margin: 24px 0 0 0;
+    margin: 24px 0 0 0;
     max-width: 576px !important;
+}
+
+/* Dashboard */
+.list-group-item-action p {
+    color: #545454;
+}
+.list-time {
+    font-weight: bold;
 }
