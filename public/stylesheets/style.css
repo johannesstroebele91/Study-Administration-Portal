@@ -7,6 +7,7 @@ GENERAL
 body {
     font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
     color: #545454 !important;
+    height: 100%;
 }
 
 h1, h2, h3, h4 {
@@ -28,7 +29,7 @@ nav ul a {
     text-align: center;
     font-size: 16px !important;
     padding: 12px !important;
-    color: #545454 !important;
+    color: #fbfbfb !important;
 }
 
 .nav-profile-link {
@@ -36,11 +37,7 @@ nav ul a {
     margin: 0;
 }
 
-@media (max-width: 992px) {
-    nav ul li:not(:last-child) {
-        border-bottom: #f4f4f4 2px solid;
-    }
-}
+
 
 nav a:hover, .logo-text:hover {
     color: #E1003A !important;
@@ -54,46 +51,28 @@ nav li:hover a {
     cursor: pointer;
 }
 
-@media (max-width: 992px) {
-    #nav-profile-mobile {
-        display: none;
-    }
-
-    #nav-profile-desktop {
-        display: inline-block;
-    }
-}
-
-@media (min-width: 993px) {
-    #nav-profile-mobile {
-        display: inline-block;
-        cursor: pointer;
-        height: 36px;
-    }
-
-    #nav-profile-desktop {
-        display: none;
-    }
-}
-
 .logo-picture {
     margin-top: 3px;
 }
 
 .logo-text {
     text-align: left;
-    color: #464646 !important;
+    color: white;
     padding-left: 9px;
     font-weight: normal;
 }
 
 /* FOOTER */
 footer {
-    width: 100%;
+    position: relative;
+    bottom: 0;
     color: #545454;
-    margin-top: 48px;
-    padding-top: 18px;
-    padding-bottom: 24px;
+    padding-top: 24px;
+    padding-bottom: 42px;
+}
+
+footer > div {
+    padding: 0 24px;
 }
 
 /* BUTTONS */
@@ -110,7 +89,7 @@ footer {
 .button-small {
     display: block;
     background: #E1003A;
-    padding: 6px 36px;
+    padding: 8px 36px;
     border-radius: 3px;
     color: white !important;
     border: none;
@@ -247,19 +226,35 @@ label {
     border-bottom: #f78ba8 2px solid !important;
 }
 
-.custom-checkbox {
-    top: -9px;
-    left: 24px;
+td, th {
+    white-space: nowrap;
+}
+
+td {
+    padding: 9px 9px 12px 9px !important;
+}
+
+.checkbox {
+    margin-right: 9px !important;
+    margin-left: 6px !important;
 }
 
 input[type=checkbox] {
-    -ms-transform: scale(2); /* IE */
-    -moz-transform: scale(2); /* FF */
-    -webkit-transform: scale(2); /* Safari and Chrome */
-    -o-transform: scale(2); /* Opera */
-    transform: scale(2);
-    padding: 10px;
+    z-index: 1;
+    -ms-transform: scale(2.4); /* IE */
+    -moz-transform: scale(2.4); /* FF */
+    -webkit-transform: scale(2.4); /* Safari and Chrome */
+    -o-transform: scale(2.4); /* Opera */
+    transform: scale(2.4);
 }
+
+table input[type=checkbox] {
+    position: relative;
+    top: 3px;
+    left: 27px;
+
+}
+
 
 /* Login */
 .main-login {
@@ -276,3 +271,48 @@ input[type=checkbox] {
     font-weight: bold;
 }
 
+.icon-register-courses {
+    position: relative;
+    top: 2px;
+    display: inline-block;
+    line-height: 20px;
+    font-size: 28px;
+    padding-right: 9px;
+    font-weight: normal;
+}
+
+/* Exams */
+.nav-link.active {
+    color: white !important;
+    background: #E1003A !important;
+}
+
+/* MOBILE */
+@media (max-width: 992px) {
+
+    nav ul li:not(:last-child) {
+        border-bottom: #40464b 2px solid;
+    }
+
+    #nav-profile-mobile {
+        display: none;
+    }
+
+    #nav-profile-desktop {
+        display: inline-block;
+    }
+}
+
+/* DESKTOP */
+@media (min-width: 993px) {
+    #nav-profile-mobile {
+        display: inline-block;
+        cursor: pointer;
+        height: 36px;
+    }
+
+    #nav-profile-desktop {
+        display: none;
+    }
+
+}

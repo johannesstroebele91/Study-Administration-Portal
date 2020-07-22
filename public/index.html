@@ -23,15 +23,16 @@
 <body class="d-flex flex-column min-vh-100 ">
 
 <!-- Header -->
-<nav class="navbar navbar-light bg-light sticky-top justify-content-center">
-    <a class="navbar-brand" href="/">
-        <img src="assets/HdM_Logo_NoText.png" width="42" class="logo-picture d-inline-block align-top" alt="">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top justify-content-center">
+    <div class="navbar-brand">
+        <img src="assets/HdM_Logo_NoText.png" width="42" class="logo-picture d-inline-block align-top" alt="Logo">
         <span class="logo-text">Study Administration Portal</span>
-    </a>
+    </div>
 </nav>
 
+
 <!-- Begin page content -->
-<main role="main" class="container main-login">
+<main role="main" class="container main-login my-5">
     <form action="#">
         <div class="text-center mb-4">
             <h1 class="h3 mb-3 font-weight-normal">Welcome Lisa!</h1>
@@ -51,11 +52,11 @@
             <input id="password" type="text" class="form-control" placeholder="Insert your password here" required="">
         </div>
 
-        <button class="button width-full" value="Send" type="submit" onclick="return submitForm()">Submit</button>
+        <button class="button width-full" value="Send" type="submit" onclick="return login()">Submit</button>
 
         <div class="mb-3">
             <label>
-                <input type="checkbox" value="remember-me"> Remember me
+                <input class="checkbox" type="checkbox" value="remember-me"> Remember me
             </label>
         </div>
 

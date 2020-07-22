@@ -26,124 +26,275 @@
 
 <!-- Main -->
 <main role="main" class="container">
-    <h1>Exams</h1>
-    <p>Here, you can see your <b>registered exams</b>, your <b>passed exams</b>, and <b>register additional courses</b> for the current semester.</p>
 
-    <h2>Registered Exams</h2>
-    <p>This shows the exams that you have registered for Information Design
-        in the current <b>summer semester 2020.</b> You can <b>deregister a courses</b>
-        by selecting it from the list below and clicking on the button "Deregister Courses".</p>
-    <div class="my-2 buttons-distribution-table">
-        <span class="headline-table my-2"><b>Registered Courses (6)</b></span>
-        <form class="form-inline button-table-search my-2">
-            <input class="form-control" type="search" placeholder="Search Courses" aria-label="Search">
-            <button class="icon" type="submit"><img src="../assets/search.png" height="21px" alt="Search icon"></button>
-        </form>
-        <button class="button-deregister-courses my-2" type="submit">
-            <img src="../assets/delete.png" height="21px" alt="Delete icon">
-            Deregister Courses
-        </button>
+    <!-- Introduction -->
+    <div class="d-flex align-items-center justify-content-between">
+        <h1>Exams</h1>
     </div>
+    <p>On this page, you can see your <b>registered exams</b> and second <b>register additional courses</b> for
+        the current semester down below. Choose from the following <b>tab bar</b> the option you like:
+    </p>
 
-    <!-- TODO needs fixing
-    <div>
-        <p>hello</p>
-        <table id="table-mock-data">
-            <thead class="thead-dark">
-            <tr>
-                <th>Deregister</th>
-                <th>Course</th>
-                <th>Deadline</th>
-                <th>Course ID</th>
-                <th>Degree</th>
-            </tr>
-            </thead>
-            <tbody>
-            </tbody>
-        </table>
-        <p>hello</p>
-    </div> -->
+    <!-- Tab bar -->
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="pills-registered-exams-tab" data-toggle="pill" href="#pills-registered-exams"
+               role="tab" aria-controls="pills-home" aria-selected="true">Registered Exams</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="pills-register-exams-tab" data-toggle="pill" href="#pills-register-exams" role="tab"
+               aria-controls="pills-profile" aria-selected="false">Register Exams</a>
+        </li>
+    </ul>
 
-    <div class="table-responsive">
-        <table class="table">
-            <thead class="thead-dark">
-            <tr>
-                <th>Status</th>
-                <th>Name</th>
-                <th>Course ID</th>
-                <th>ECTS</th>
-                <th>Deadline</th>
-                <th>Area</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck5">
-                        <label class="custom-control-label" for="customCheck5"></label>
+    <div class="tab-content" id="pills-tabContent">
+
+        <!-- Tab: deregister courses -->
+        <div class="tab-pane fade show active" id="pills-registered-exams" role="tabpanel"
+             aria-labelledby="pills-registered-exams-tab">
+            <p>This table lists the <b>courses that you have registered</b> for Information Design
+                in the current summer semester 2020.You can <b>deregister a courses</b>
+                by selecting it from the list below and clicking on the button "Deregister Selected Courses".</p>
+            <div class="my-2 buttons-distribution-table">
+                <span class="headline-table my-2"><b>Registered Courses (5)</b></span>
+                <form class="form-inline button-table-search my-2">
+                    <input class="form-control" type="search" placeholder="Search Course" aria-label="Search">
+                    <button class="icon" type="submit"><img src="../assets/search.png" height="21px" alt="Search icon">
+                    </button>
+                </form>
+                <button class="button-deregister-courses my-2" data-toggle="modal" type="submit"
+                        data-target="#modalDeregisterCourses">
+                    <img src="../assets/delete.png" height="21px" alt="Delete icon">
+                    <span>Deregister Selected Courses</span>
+                </button>
+                <div class="modal fade" id="modalDeregisterCourses" tabindex="-1" role="dialog"
+                     aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Are you sure?</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Do you really want to deregister the following courses? You can register them again
+                                    until the end of the registration period at the 28.05.2020.</p>
+                                <ol>
+                                    <li>App Design</li>
+                                    <li>App Design</li>
+                                    <li>App Design</li>
+                                    <li>App Design</li>
+                                    <li>App Design</li>
+                                </ol>
+                                <label>
+                                    <input class="checkbox" type="checkbox" value="remember-me"> I have read the hints
+                                    and accept the conditions.
+                                </label>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Abort</button>
+                                <button type="submit" class="button-small" value="Send"
+                                        onclick="return deregisterCourses()">Deregister Courses
+                                </button>
+                            </div>
+                        </div>
                     </div>
-                </td>
-                <td>App Design</td>
-                <td>53423</td>
-                <td>5</td>
-                <td>20.07.2020</td>
-                <td>Project</td>
-            </tr>
-            <tr>
-                <td>
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck5">
-                        <label class="custom-control-label" for="customCheck5"></label>
+                </div>
+            </div>
+
+            <!-- Table -->
+            <div class="table-responsive">
+                <table class="table">
+                    <thead class="thead-dark">
+                    <tr>
+                        <th>Status</th>
+                        <th>Name</th>
+                        <th>ID</th>
+                        <th>ECTS</th>
+                        <th>Lecturer</th>
+                        <th>Area</th>
+                        <th>Exam Type</th>
+                        <th>Exam Date</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>App Design</td>
+                        <td>53423</td>
+                        <td>5</td>
+                        <td>Prof. Ralph Tille</td>
+                        <td>Project</td>
+                        <td>PA</td>
+                        <td>20.07.2020</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>App Design</td>
+                        <td>53423</td>
+                        <td>5</td>
+                        <td>Prof. Ralph Tille</td>
+                        <td>Project</td>
+                        <td>PA</td>
+                        <td>20.07.2020</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>App Design</td>
+                        <td>53423</td>
+                        <td>5</td>
+                        <td>Prof. Ralph Tille</td>
+                        <td>Project</td>
+                        <td>PA</td>
+                        <td>20.07.2020</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>App Design</td>
+                        <td>53423</td>
+                        <td>5</td>
+                        <td>Prof. Ralph Tille</td>
+                        <td>Project</td>
+                        <td>PA</td>
+                        <td>20.07.2020</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>App Design</td>
+                        <td>53423</td>
+                        <td>5</td>
+                        <td>Prof. Ralph Tille</td>
+                        <td>Project</td>
+                        <td>PA</td>
+                        <td>20.07.2020</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Tab: enroll in courses -->
+        <div class="tab-pane fade" id="pills-enroll-exams" role="tabpanel" aria-labelledby="pills-enroll-exams-tab">
+            <p>These are the <b>courses that you can register</b> for Information Design
+                in the current summer semester 2020. You can <b>register a courses</b>
+                by selecting it from the list below and clicking on the button "Register Selected Courses".</p>
+            <div class="my-2 buttons-distribution-table">
+                <span class="headline-table my-2"><b>Registrable Courses (3)</b></span>
+                <form class="form-inline button-table-search my-2">
+                    <input class="form-control" type="search" placeholder="Search Course" aria-label="Search">
+                    <button class="icon" type="submit">
+                        <img src="../assets/search.png" height="21px" alt="Search icon">
+                    </button>
+                </form>
+                <button class="button-deregister-courses my-2" type="submit" data-toggle="modal"
+                        data-target="#modalRegisterCourses">
+                    <span class="icon-register-courses">+</span>
+                    <span>Register Selected Courses</span>
+                </button>
+                <div class="modal fade" id="modalRegisterCourses" tabindex="-1" role="dialog"
+                     aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Are you sure?</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Do you really want to register the following courses? The registration is
+                                    binding, but conditionally until the end of the registration period at the
+                                    28.05.2020.
+                                    Please, closely check your entries after registration and deregistration date. </p>
+                                <ol>
+                                    <li>App Design</li>
+                                    <li>App Design</li>
+                                    <li>App Design</li>
+                                    <li>App Design</li>
+                                    <li>App Design</li>
+                                </ol>
+                                <label>
+                                    <input class="checkbox" type="checkbox" value="remember-me"> I have read the hints
+                                    and accept the conditions.
+                                </label>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Abort</button>
+                            <button type="submit" class="button-small" value="Send" onclick="return registerCourses()">
+                                Register Courses
+                            </button>
+                        </div>
                     </div>
-                </td>
-                <td>App Design</td>
-                <td>53423</td>
-                <td>5</td>
-                <td>20.07.2020</td>
-                <td>Project</td>
-            </tr>
-            <tr>
-                <td>
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck5">
-                        <label class="custom-control-label" for="customCheck5"></label>
-                    </div>
-                </td>
-                <td>App Design</td>
-                <td>53423</td>
-                <td>5</td>
-                <td>20.07.2020</td>
-                <td>Project</td>
-            </tr>
-            <tr>
-                <td>
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck5">
-                        <label class="custom-control-label" for="customCheck5"></label>
-                    </div>
-                </td>
-                <td>App Design</td>
-                <td>53423</td>
-                <td>5</td>
-                <td>20.07.2020</td>
-                <td>Project</td>
-            </tr>
-            <tr>
-                <td>
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck5">
-                        <label class="custom-control-label" for="customCheck5"></label>
-                    </div>
-                </td>
-                <td>App Design</td>
-                <td>53423</td>
-                <td>5</td>
-                <td>20.07.2020</td>
-                <td>Project</td>
-            </tr>
-            </tbody>
-        </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Table -->
+        <div class="table-responsive">
+            <table class="table">
+                <thead class="thead-dark">
+                <tr>
+                    <th>Status</th>
+                    <th>Name</th>
+                    <th>ID</th>
+                    <th>ECTS</th>
+                    <th>Lecturer</th>
+                    <th>Area</th>
+                    <th>Exam Type</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>App Design</td>
+                    <td>53423</td>
+                    <td>5</td>
+                    <td>Prof. Ralph Tille</td>
+                    <td>Project</td>
+                    <td>PA</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>App Design</td>
+                    <td>53423</td>
+                    <td>5</td>
+                    <td>Prof. Ralph Tille</td>
+                    <td>Project</td>
+                    <td>PA</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>App Design</td>
+                    <td>53423</td>
+                    <td>5</td>
+                    <td>Prof. Ralph Tille</td>
+                    <td>Project</td>
+                    <td>PA</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>App Design</td>
+                    <td>53423</td>
+                    <td>5</td>
+                    <td>Prof. Ralph Tille</td>
+                    <td>Project</td>
+                    <td>PA</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>App Design</td>
+                    <td>53423</td>
+                    <td>5</td>
+                    <td>Prof. Ralph Tille</td>
+                    <td>Project</td>
+                    <td>PA</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
     </div>
 
 </main>

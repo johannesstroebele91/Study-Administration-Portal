@@ -7,13 +7,11 @@ $(function () {
     $("#footer-placeholder").load("footer.html");
 });
 
-// Login
-function submitForm() {
+// Link to Login Page
+function login() {
 
     let email = "admin@gmail.com";
     let password = "password";
-
-    console.log("here");
 
     if (document.getElementById("password").value === password && document.getElementById("email").value === email) {
         window.location.href = '/dashboard';
@@ -27,10 +25,30 @@ function submitForm() {
     }
 }
 
+// Link to Exams Page
 function linkToExams() {
     window.location.href = '/exams';
     return false;
 }
+
+// Link to Exam Registration Page
+function linkToExamRegistration() {
+    window.location.href = '/exam-registration';
+    return false;
+}
+
+// Register Courses
+function deregisterCourses() {
+    // TODO implement logic
+    linkToExams();
+}
+
+// Deregister Courses
+function registerCourses() {
+    // TODO implement logic
+    linkToExams();
+}
+
 
 
 
