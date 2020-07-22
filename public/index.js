@@ -18,6 +18,22 @@ $(function () {
     $("#modal-enroll-courses-placeholder").load("modal-enroll-courses.html");
 });
 
+// TODO fix nav active
+$(function(){
+    let current = location.pathname;
+    $('#navbarSupportedContent li a').each(function(){
+        let $this = $(this);
+        // if the current path is like this link, make it active
+        if($this.attr('href').indexOf(current) !== -1){
+            $this.addClass('active');
+        }
+        console.log('here');
+        console.log($this.attr('href'));
+        console.log($this.attr('href').indexOf(current));
+        console.log($(this));
+    })
+})
+
 
 // Link to Login Page
 function login() {
