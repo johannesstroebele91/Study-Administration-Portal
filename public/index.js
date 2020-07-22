@@ -1,21 +1,21 @@
 // Navigation on multiple pages
 $(function () {
-    $("#nav-placeholder").load("nav.html");
+    $("#nav-placeholder").load("components/nav.html");
 });
 
 // Footer on multiple pages
 $(function () {
-    $("#footer-placeholder").load("footer.html");
+    $("#footer-placeholder").load("components/footer.html");
 });
 
 // Outsource deregister courses modal
 $(function () {
-    $("#modal-deregister-courses-placeholder").load("modal-deregister-courses.html");
+    $("#modal-deregister-courses-placeholder").load("components/modal-deregister-courses.html");
 });
 
 // Outsource enroll courses modal
 $(function () {
-    $("#modal-enroll-courses-placeholder").load("modal-enroll-courses.html");
+    $("#modal-enroll-courses-placeholder").load("components/modal-enroll-courses.html");
 });
 
 // TODO fix nav active
