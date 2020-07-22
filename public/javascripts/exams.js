@@ -39,3 +39,10 @@ let courses = [
 // TODO implement using: https://stackoverflow.com/questions/171027/add-table-row-in-jquery
 // and https://stackoverflow.com/questions/18333427/how-to-insert-a-row-in-an-html-table-body-in-javascript
 $('#table-mock-data > tbody:last-child').append('<tr><th>Deregister</th></tr><tr><th>Deregister</th></tr>');
+
+/* Add classes for a responsive headline and button
+if ($(window).width() > 576) {
+    $('#dynamical-responsive-headline-button').addClass('responsive-headline-button');
+} else {
+    $('#dynamical-responsive-headline-button').removeClass('responsive-headline-button');
+}*/

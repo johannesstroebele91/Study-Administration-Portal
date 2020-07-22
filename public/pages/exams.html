@@ -16,7 +16,7 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" type="text/css" href="../stylesheets/style.css">
     <link rel="stylesheet" type="text/css" href="/scripts/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans"/>
 </head>
 
 <!-- BODY -->
@@ -31,18 +31,19 @@
     <div class="d-flex align-items-center justify-content-between">
         <h1>Exams</h1>
     </div>
-    <p>On this page, you can see your <b>registered courses</b>, deregister courses, and <b>enroll in additional courses</b> for
+    <p>On this page, you can see your <b>registered courses</b>, deregister courses, and <b>enroll in additional
+        courses</b> for
         the current semester. Choose from the following <b>tab bar</b> what you would like to do:
     </p>
 
     <!-- Tab bar -->
     <ul class="nav nav-pills mb-3 mt-5" id="pills-tab" role="tablist">
         <li class="nav-item">
-            <a class="nav-link active" id="pills-registered-exams-tab" data-toggle="pill" href="#pills-registered-exams"
+            <a class="nav-link custom-nav-link active" id="pills-registered-exams-tab" data-toggle="pill" href="#pills-registered-exams"
                role="tab" aria-controls="pills-registered-exams" aria-selected="true">1. Deregister Courses</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" id="pills-enroll-exams-tab" data-toggle="pill" href="#pills-enroll-exams" role="tab"
+            <a class="nav-link custom-nav-link" id="pills-enroll-exams-tab" data-toggle="pill" href="#pills-enroll-exams" role="tab"
                aria-controls="pills-enroll-exams" aria-selected="false">2. Enroll in Courses</a>
         </li>
     </ul>
@@ -63,7 +64,7 @@
                                                                 alt="Search icon">
                         </button>
                     </form>
-                    <button class="button-exams-table my-2" data-toggle="modal" type="submit"
+                    <button class="button-small my-2" data-toggle="modal" type="submit"
                             data-target="#modalDeregisterCourses">
                         <img src="../assets/delete.png" height="21px" alt="Delete icon">
                         <span>Deregister 3 Selected Courses</span>
@@ -156,17 +157,23 @@
                             <img src="../assets/search.png" height="21px" alt="Search icon">
                         </button>
                     </form>
-                    <button class="button-exams-table my-2" type="submit" data-toggle="modal"
+                    <button class="button-small my-2" type="submit" data-toggle="modal"
                             data-target="#modalEnrollCourses">
                         <span class="icon-enroll-courses">+</span>
-                        <span>Register 4 Selected Courses</span>
+                        <span>Enroll in 4 Selected Courses</span>
                     </button>
                 </div>
                 <div id="modal-enroll-courses-placeholder"></div>
             </div>
 
             <!-- Table: Mandatory Courses -->
-            <h2>Mandatory Courses</h2>
+            <div class="responsive-headline-button mb-3">
+                <h2>Mandatory Courses</h2>
+                <button class="button-white">
+                    <img src="../assets/Hide.png" height="21px" alt="Delete icon">
+                    <span>Hide Mandatory Courses</span>
+                </button>
+            </div>
             <div class="table-responsive">
                 <table class="table">
                     <thead class="thead-dark">
@@ -276,7 +283,13 @@
             </div>
 
             <!-- Table: Specializations -->
-            <h2>Specializations</h2>
+            <div class="responsive-headline-button mb-3">
+                <h2>Specializations</h2>
+                <button class="button-white">
+                    <img src="../assets/Hide.png" height="21px" alt="Delete icon">
+                    <span>Hide Specializations</span>
+                </button>
+            </div>
             <div class="table-responsive">
                 <table class="table">
                     <thead class="thead-dark">
@@ -377,7 +390,13 @@
             </div>
 
             <!-- Table: Projects -->
-            <h2>Projects</h2>
+            <div class="responsive-headline-button mb-3">
+                <h2>Projects</h2>
+                <button class="button-white">
+                    <img src="../assets/Hide.png" height="21px" alt="Delete icon">
+                    <span>Hide Projects</span>
+                </button>
+            </div>
             <div class="table-responsive">
                 <table class="table">
                     <thead class="thead-dark">
@@ -457,6 +476,7 @@
 <script src="/scripts/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="/scripts/chart.js/dist/Chart.js"></script>
 <script src="../index.js"></script>
+<script src="../javascripts/exams.js"></script>
 </body>
 
 </html>

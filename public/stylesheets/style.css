@@ -64,7 +64,7 @@ nav ul a {
 }
 
 .nav-bg {
-    background: #4b4b4b;
+    background: #565656;
 }
 
 nav a:hover, .logo-text:hover {
@@ -115,18 +115,20 @@ footer > div {
     border-radius: 3px;
     color: white;
     border: none;
+    white-space:nowrap;
 }
 
 .button-small {
     display: block;
     background: #E1003A;
-    padding: 8px 36px;
+    padding: 10px 24px;
     border-radius: 3px;
     color: white !important;
     border: none;
+    white-space:nowrap;
 }
 
-.button-exams-table {
+.button-white {
     display: block;
     background: white;
     padding: 8px 24px;
@@ -136,8 +138,8 @@ footer > div {
     white-space:nowrap;
 }
 
-.button-delete-selected-courses > img{
-    padding-right: 9px;
+.button-white > img{
+    padding-right: 6px;
 }
 
 .button-table-search {
@@ -257,10 +259,15 @@ table input[type=checkbox] {
 }
 
 .nav-link.active {
+    color: #f2003c !important;
+}
+
+.custom-nav-link.active {
     font-size: 18px;
     color: white !important;
     background: #E1003A !important;
 }
+
 
 .icon-enroll-courses {
     position: relative;
@@ -270,6 +277,7 @@ table input[type=checkbox] {
     font-size: 28px;
     padding-right: 9px;
     font-weight: normal;
+    color: white !important;
 }
 
 
@@ -279,7 +287,7 @@ table input[type=checkbox] {
 @media (max-width: 992.98px) {
 
     nav ul li:not(:last-child) {
-        border-bottom: #40464b 2px solid;
+        border-bottom: #555555 2px solid;
     }
 
     #nav-profile-mobile {
@@ -320,7 +328,7 @@ table input[type=checkbox] {
         width: 100% !important;
     }
 
-    .button-exams-table {
+    .button-small, .button-white {
         width: 100% !important;
     }
 }
@@ -345,5 +353,15 @@ table input[type=checkbox] {
 
     .nav-link:first-child {
         margin-right: 18px;
+    }
+
+    .responsive-headline-button {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: stretch;
+
     }
 }
