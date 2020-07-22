@@ -59,21 +59,15 @@ function linkToExams() {
     return false;
 }
 
-// Link to Exam Registration Page
-function linkToExamRegistration() {
-    window.location.href = '/exam-registration';
-    return false;
-}
-
 // Deregister Courses
 function deregisterCourses() {
-    // TODO implement logic
+    // TODO implement deregister courses logic
     linkToExams();
 }
 
 // Enroll Courses
 function enrollCourses() {
-    // TODO implement logic
+    // TODO implement enroll in courses logic
     linkToExams();
 }
 

@@ -39,11 +39,13 @@
     <!-- Tab bar -->
     <ul class="nav nav-pills mb-3 mt-5" id="pills-tab" role="tablist">
         <li class="nav-item">
-            <a class="nav-link custom-nav-link active" id="pills-registered-exams-tab" data-toggle="pill" href="#pills-registered-exams"
+            <a class="nav-link custom-nav-link active" id="pills-registered-exams-tab" data-toggle="pill"
+               href="#pills-registered-exams"
                role="tab" aria-controls="pills-registered-exams" aria-selected="true">1. Deregister Courses</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link custom-nav-link" id="pills-enroll-exams-tab" data-toggle="pill" href="#pills-enroll-exams" role="tab"
+            <a class="nav-link custom-nav-link" id="pills-enroll-exams-tab" data-toggle="pill"
+               href="#pills-enroll-exams" role="tab"
                aria-controls="pills-enroll-exams" aria-selected="false">2. Enroll in Courses</a>
         </li>
     </ul>
@@ -167,299 +169,304 @@
             </div>
 
             <!-- Table: Mandatory Courses -->
-            <div class="responsive-headline-button mb-3">
-                <h2>Mandatory Courses</h2>
-                <button class="button-white">
-                    <img src="../assets/Hide.png" height="21px" alt="Delete icon">
-                    <span>Hide Mandatory Courses</span>
-                </button>
-            </div>
-            <div class="table-responsive">
-                <table class="table">
-                    <thead class="thead-dark">
-                    <tr>
-                        <th>Status</th>
-                        <th>Name</th>
-                        <th>ID</th>
-                        <th>ECTS</th>
-                        <th>Lecturer</th>
-                        <th>Area</th>
-                        <th>Exam Type</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>Bachelor Thesis</td>
-                        <td>59384</td>
-                        <td>12</td>
-                        <td>Prof. Ralph Tille</td>
-                        <td>Thesis</td>
-                        <td>FA</td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>Internship</td>
-                        <td>64364</td>
-                        <td>30</td>
-                        <td>Prof. Ralph Tille</td>
-                        <td>Internship</td>
-                        <td>PA</td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>App Design</td>
-                        <td>53423</td>
-                        <td>5</td>
-                        <td>Prof. Ralph Tille</td>
-                        <td>Project</td>
-                        <td>PA</td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>App Design</td>
-                        <td>53423</td>
-                        <td>5</td>
-                        <td>Prof. Ralph Tille</td>
-                        <td>Project</td>
-                        <td>PA</td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>App Design</td>
-                        <td>53423</td>
-                        <td>5</td>
-                        <td>Prof. Ralph Tille</td>
-                        <td>Project</td>
-                        <td>PA</td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>App Design</td>
-                        <td>53423</td>
-                        <td>5</td>
-                        <td>Prof. Ralph Tille</td>
-                        <td>Project</td>
-                        <td>PA</td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>App Design</td>
-                        <td>53423</td>
-                        <td>5</td>
-                        <td>Prof. Ralph Tille</td>
-                        <td>Project</td>
-                        <td>PA</td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>App Design</td>
-                        <td>53423</td>
-                        <td>5</td>
-                        <td>Prof. Ralph Tille</td>
-                        <td>Project</td>
-                        <td>PA</td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>App Design</td>
-                        <td>53423</td>
-                        <td>5</td>
-                        <td>Prof. Ralph Tille</td>
-                        <td>Project</td>
-                        <td>PA</td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>App Design</td>
-                        <td>53423</td>
-                        <td>5</td>
-                        <td>Prof. Ralph Tille</td>
-                        <td>Project</td>
-                        <td>PA</td>
-                    </tr>
-                    </tbody>
-                </table>
+            <div class="section-mandatory-courses">
+                <div class="responsive-headline-button mb-3">
+                    <h2>Mandatory Courses</h2>
+                    <button id="hide-section-mandatory-courses" class="button-white" >
+                        <img src="../assets/Hide.png" height="21px" alt="Delete icon">
+                        <span>Hide Mandatory Courses</span>
+                    </button>
+                </div>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead class="thead-dark">
+                        <tr>
+                            <th>Status</th>
+                            <th>Name</th>
+                            <th>ID</th>
+                            <th>ECTS</th>
+                            <th>Lecturer</th>
+                            <th>Area</th>
+                            <th>Exam Type</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Bachelor Thesis</td>
+                            <td>59384</td>
+                            <td>12</td>
+                            <td>Prof. Ralph Tille</td>
+                            <td>Thesis</td>
+                            <td>FA</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Internship</td>
+                            <td>64364</td>
+                            <td>30</td>
+                            <td>Prof. Ralph Tille</td>
+                            <td>Internship</td>
+                            <td>PA</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>App Design</td>
+                            <td>53423</td>
+                            <td>5</td>
+                            <td>Prof. Ralph Tille</td>
+                            <td>Project</td>
+                            <td>PA</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>App Design</td>
+                            <td>53423</td>
+                            <td>5</td>
+                            <td>Prof. Ralph Tille</td>
+                            <td>Project</td>
+                            <td>PA</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>App Design</td>
+                            <td>53423</td>
+                            <td>5</td>
+                            <td>Prof. Ralph Tille</td>
+                            <td>Project</td>
+                            <td>PA</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>App Design</td>
+                            <td>53423</td>
+                            <td>5</td>
+                            <td>Prof. Ralph Tille</td>
+                            <td>Project</td>
+                            <td>PA</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>App Design</td>
+                            <td>53423</td>
+                            <td>5</td>
+                            <td>Prof. Ralph Tille</td>
+                            <td>Project</td>
+                            <td>PA</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>App Design</td>
+                            <td>53423</td>
+                            <td>5</td>
+                            <td>Prof. Ralph Tille</td>
+                            <td>Project</td>
+                            <td>PA</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>App Design</td>
+                            <td>53423</td>
+                            <td>5</td>
+                            <td>Prof. Ralph Tille</td>
+                            <td>Project</td>
+                            <td>PA</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>App Design</td>
+                            <td>53423</td>
+                            <td>5</td>
+                            <td>Prof. Ralph Tille</td>
+                            <td>Project</td>
+                            <td>PA</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
 
             <!-- Table: Specializations -->
-            <div class="responsive-headline-button mb-3">
-                <h2>Specializations</h2>
-                <button class="button-white">
-                    <img src="../assets/Hide.png" height="21px" alt="Delete icon">
-                    <span>Hide Specializations</span>
-                </button>
-            </div>
-            <div class="table-responsive">
-                <table class="table">
-                    <thead class="thead-dark">
-                    <tr>
-                        <th>Status</th>
-                        <th>Name</th>
-                        <th>ID</th>
-                        <th>ECTS</th>
-                        <th>Lecturer</th>
-                        <th>Area</th>
-                        <th>Exam Type</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>Mobile Medien</td>
-                        <td>334050a</td>
-                        <td>5</td>
-                        <td>Prof. Dr. Jörg Westbomke</td>
-                        <td>Specializations</td>
-                        <td>PA</td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>Mobile Medien</td>
-                        <td>334050a</td>
-                        <td>5</td>
-                        <td>Prof. Dr. Jörg Westbomke</td>
-                        <td>Specializations</td>
-                        <td>PA</td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>Mobile Medien</td>
-                        <td>334050a</td>
-                        <td>5</td>
-                        <td>Prof. Dr. Jörg Westbomke</td>
-                        <td>Specializations</td>
-                        <td>PA</td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>Mobile Medien</td>
-                        <td>334050a</td>
-                        <td>5</td>
-                        <td>Prof. Dr. Jörg Westbomke</td>
-                        <td>Specializations</td>
-                        <td>PA</td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>Mobile Medien</td>
-                        <td>334050a</td>
-                        <td>5</td>
-                        <td>Prof. Dr. Jörg Westbomke</td>
-                        <td>Specializations</td>
-                        <td>PA</td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>Mobile Medien</td>
-                        <td>334050a</td>
-                        <td>5</td>
-                        <td>Prof. Dr. Jörg Westbomke</td>
-                        <td>Specializations</td>
-                        <td>PA</td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>Mobile Medien</td>
-                        <td>334050a</td>
-                        <td>5</td>
-                        <td>Prof. Dr. Jörg Westbomke</td>
-                        <td>Specializations</td>
-                        <td>PA</td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>Mobile Medien</td>
-                        <td>334050a</td>
-                        <td>5</td>
-                        <td>Prof. Dr. Jörg Westbomke</td>
-                        <td>Specializations</td>
-                        <td>PA</td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>Mobile Medien</td>
-                        <td>334050a</td>
-                        <td>5</td>
-                        <td>Prof. Dr. Jörg Westbomke</td>
-                        <td>Specializations</td>
-                        <td>PA</td>
-                    </tr>
-                    </tbody>
-                </table>
+            <div class="section-specializations">
+                <div class="responsive-headline-button mb-3">
+                    <h2>Specializations</h2>
+                    <button id="hide-section-specializations" class="button-white">
+                        <img src="../assets/Hide.png" height="21px" alt="Delete icon">
+                        <span>Hide Specializations</span>
+                    </button>
+                </div>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead class="thead-dark">
+                        <tr>
+                            <th>Status</th>
+                            <th>Name</th>
+                            <th>ID</th>
+                            <th>ECTS</th>
+                            <th>Lecturer</th>
+                            <th>Area</th>
+                            <th>Exam Type</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Mobile Medien</td>
+                            <td>334050a</td>
+                            <td>5</td>
+                            <td>Prof. Dr. Jörg Westbomke</td>
+                            <td>Specializations</td>
+                            <td>PA</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Mobile Medien</td>
+                            <td>334050a</td>
+                            <td>5</td>
+                            <td>Prof. Dr. Jörg Westbomke</td>
+                            <td>Specializations</td>
+                            <td>PA</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Mobile Medien</td>
+                            <td>334050a</td>
+                            <td>5</td>
+                            <td>Prof. Dr. Jörg Westbomke</td>
+                            <td>Specializations</td>
+                            <td>PA</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Mobile Medien</td>
+                            <td>334050a</td>
+                            <td>5</td>
+                            <td>Prof. Dr. Jörg Westbomke</td>
+                            <td>Specializations</td>
+                            <td>PA</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Mobile Medien</td>
+                            <td>334050a</td>
+                            <td>5</td>
+                            <td>Prof. Dr. Jörg Westbomke</td>
+                            <td>Specializations</td>
+                            <td>PA</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Mobile Medien</td>
+                            <td>334050a</td>
+                            <td>5</td>
+                            <td>Prof. Dr. Jörg Westbomke</td>
+                            <td>Specializations</td>
+                            <td>PA</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Mobile Medien</td>
+                            <td>334050a</td>
+                            <td>5</td>
+                            <td>Prof. Dr. Jörg Westbomke</td>
+                            <td>Specializations</td>
+                            <td>PA</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Mobile Medien</td>
+                            <td>334050a</td>
+                            <td>5</td>
+                            <td>Prof. Dr. Jörg Westbomke</td>
+                            <td>Specializations</td>
+                            <td>PA</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Mobile Medien</td>
+                            <td>334050a</td>
+                            <td>5</td>
+                            <td>Prof. Dr. Jörg Westbomke</td>
+                            <td>Specializations</td>
+                            <td>PA</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
 
             <!-- Table: Projects -->
-            <div class="responsive-headline-button mb-3">
-                <h2>Projects</h2>
-                <button class="button-white">
-                    <img src="../assets/Hide.png" height="21px" alt="Delete icon">
-                    <span>Hide Projects</span>
-                </button>
+            <div class="section-projects">
+                <div class="responsive-headline-button mb-3">
+                    <h2>Projects</h2>
+                    <button id="hide-section-projects" class="button-white">
+                        <img src="../assets/Hide.png" height="21px" alt="Delete icon">
+                        <span>Hide Projects</span>
+                    </button>
+                </div>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead class="thead-dark">
+                        <tr>
+                            <th>Status</th>
+                            <th>Name</th>
+                            <th>ID</th>
+                            <th>ECTS</th>
+                            <th>Lecturer</th>
+                            <th>Area</th>
+                            <th>Exam Type</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>App Design</td>
+                            <td>53423</td>
+                            <td>5</td>
+                            <td>Prof. Ralph Tille</td>
+                            <td>Project</td>
+                            <td>PA</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>App Design</td>
+                            <td>53423</td>
+                            <td>5</td>
+                            <td>Prof. Ralph Tille</td>
+                            <td>Project</td>
+                            <td>PA</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>App Design</td>
+                            <td>53423</td>
+                            <td>5</td>
+                            <td>Prof. Ralph Tille</td>
+                            <td>Project</td>
+                            <td>PA</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>App Design</td>
+                            <td>53423</td>
+                            <td>5</td>
+                            <td>Prof. Ralph Tille</td>
+                            <td>Project</td>
+                            <td>PA</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>App Design</td>
+                            <td>53423</td>
+                            <td>5</td>
+                            <td>Prof. Ralph Tille</td>
+                            <td>Project</td>
+                            <td>PA</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-            <div class="table-responsive">
-                <table class="table">
-                    <thead class="thead-dark">
-                    <tr>
-                        <th>Status</th>
-                        <th>Name</th>
-                        <th>ID</th>
-                        <th>ECTS</th>
-                        <th>Lecturer</th>
-                        <th>Area</th>
-                        <th>Exam Type</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>App Design</td>
-                        <td>53423</td>
-                        <td>5</td>
-                        <td>Prof. Ralph Tille</td>
-                        <td>Project</td>
-                        <td>PA</td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>App Design</td>
-                        <td>53423</td>
-                        <td>5</td>
-                        <td>Prof. Ralph Tille</td>
-                        <td>Project</td>
-                        <td>PA</td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>App Design</td>
-                        <td>53423</td>
-                        <td>5</td>
-                        <td>Prof. Ralph Tille</td>
-                        <td>Project</td>
-                        <td>PA</td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>App Design</td>
-                        <td>53423</td>
-                        <td>5</td>
-                        <td>Prof. Ralph Tille</td>
-                        <td>Project</td>
-                        <td>PA</td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>App Design</td>
-                        <td>53423</td>
-                        <td>5</td>
-                        <td>Prof. Ralph Tille</td>
-                        <td>Project</td>
-                        <td>PA</td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-
         </div>
 
     </div>

@@ -1,3 +1,18 @@
+$(document).ready(function(){
+    $("#hide-section-mandatory-courses").click(function(){
+        $(".section-mandatory-courses").hide();
+    });
+
+    $("#hide-section-specializations").click(function(){
+        $(".section-specializations").hide();
+    });
+
+    $("#hide-section-projects").click(function(){
+        $(".section-projects").hide();
+    });
+});
+
+
 // TODO implement automatic table generation from mock data: https://stackoverflow.com/questions/171027/add-table-row-in-jquery
 // and https://stackoverflow.com/questions/18333427/how-to-insert-a-row-in-an-html-table-body-in-javascript
 /*
