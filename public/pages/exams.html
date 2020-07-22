@@ -36,14 +36,14 @@
     </p>
 
     <!-- Tab bar -->
-    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+    <ul class="nav nav-pills mb-3 mt-5" id="pills-tab" role="tablist">
         <li class="nav-item">
             <a class="nav-link active" id="pills-registered-exams-tab" data-toggle="pill" href="#pills-registered-exams"
-               role="tab" aria-controls="pills-registered-exams" aria-selected="true">Registered Exams</a>
+               role="tab" aria-controls="pills-registered-exams" aria-selected="true">1. Deregister Courses</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" id="pills-enroll-exams-tab" data-toggle="pill" href="#pills-enroll-exams" role="tab"
-               aria-controls="pills-enroll-exams" aria-selected="false">Enroll Exams</a>
+               aria-controls="pills-enroll-exams" aria-selected="false">2. Enroll Courses</a>
         </li>
     </ul>
 
@@ -66,6 +66,7 @@
                     <img src="../assets/delete.png" height="21px" alt="Delete icon">
                     <span>Deregister 3 Selected Courses</span>
                 </button>
+                <div id="modal-deregister-courses-placeholder"></div>
             </div>
 
             <!-- Table -->
@@ -156,6 +157,7 @@
                     <span class="icon-enroll-courses">+</span>
                     <span>Register 4 Selected Courses</span>
                 </button>
+                <div id="modal-enroll-courses-placeholder"></div>
             </div>
 
             <!-- Table -->

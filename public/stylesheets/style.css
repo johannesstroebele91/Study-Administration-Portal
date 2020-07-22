@@ -242,7 +242,20 @@ table input[type=checkbox] {
 }
 
 /* Exams */
+.nav-pills {
+    border-bottom: 3px solid #ececec;
+    border-radius: 3px;
+}
+.nav-link {
+    font-size: 18px;
+}
+
+.nav-link:first-child {
+    margin-right: 18px;
+}
+
 .nav-link.active {
+    font-size: 18px;
     color: white !important;
     background: #E1003A !important;
 }
