@@ -368,6 +368,12 @@ table input[type=checkbox] {
     }
 }
 
+@media (max-width: 575.98px) {
+    #pills-tab > .nav-item {
+        width: 100%;
+    }
+}
+
 @media (min-width: 576px) {
     .button-table-search {
         width: 240px;
