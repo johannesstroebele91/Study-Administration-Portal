@@ -67,8 +67,12 @@ nav ul a {
     background: #565656;
 }
 
+#nav-placeholder {
+    border-bottom: 2px solid #9c9c9c;
+}
+
 nav a:hover, .logo-text:hover {
-    color: #E1003A !important;
+    color: #f93e5e !important;
 }
 
 nav .border-none {
@@ -259,7 +263,7 @@ table input[type=checkbox] {
 }
 
 .nav-link.active {
-    color: #f2003c !important;
+    color: #f93e5e !important;
 }
 
 .custom-nav-link.active {
@@ -287,7 +291,7 @@ table input[type=checkbox] {
 @media (max-width: 992.98px) {
 
     nav ul li:not(:last-child) {
-        border-bottom: #555555 2px solid;
+        border-bottom: #525252 2px solid;
     }
 
     #nav-profile-mobile {
