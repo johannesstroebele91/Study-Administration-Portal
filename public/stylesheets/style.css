@@ -1,9 +1,12 @@
 /* STRUCTURE
 GENERAL
-...
+PAGES
+RESPONSIVE
  */
 
 /* GENERAL */
+
+/* Overall */
 body {
     font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
     color: #545454 !important;
@@ -24,7 +27,29 @@ a {
     max-width: 900px!important;
 }
 
-/* NAV */
+.width-full {
+    width: 100%;
+}
+
+.checkbox {
+    margin-right: 9px !important;
+    margin-left: 6px !important;
+}
+
+label {
+    margin-top: 12px;
+}
+
+input[type=checkbox] {
+    z-index: 1;
+    -ms-transform: scale(2.4); /* IE */
+    -moz-transform: scale(2.4); /* FF */
+    -webkit-transform: scale(2.4); /* Safari and Chrome */
+    -o-transform: scale(2.4); /* Opera */
+    transform: scale(2.4);
+}
+
+/* Navbar */
 nav ul a {
     text-align: center;
     font-size: 16px !important;
@@ -62,7 +87,7 @@ nav li:hover a {
     font-weight: normal;
 }
 
-/* FOOTER */
+/* Footer */
 footer {
     position: relative;
     bottom: 0;
@@ -75,7 +100,7 @@ footer > div {
     padding: 0 24px;
 }
 
-/* BUTTONS */
+/* Buttons */
 .button {
     display: block;
     background: #E1003A;
@@ -95,40 +120,7 @@ footer > div {
     border: none;
 }
 
-@media (min-width: 768px) {
-    .button-table-search {
-        width: 240px;
-    }
-
-    .button-table-search > input {
-        width: 192px !important;
-    }
-
-    .buttons-distribution-table {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        align-items: center;
-        align-content: stretch;
-    }
-}
-
-@media (max-width: 767px) {
-    .button-table-search {
-        width: 100%;
-    }
-
-    .button-table-search > input {
-        width: 100% !important;
-    }
-
-    .button-deregister-courses {
-        width: 100% !important;
-    }
-}
-
-.button-deregister-courses {
+.button-exams-table {
     display: block;
     background: white;
     padding: 8px 24px;
@@ -159,7 +151,6 @@ footer > div {
     border-right: 3px solid #E1003A;
 }
 
-
 .icon {
     display: block;
     background: #E1003A;
@@ -169,17 +160,11 @@ footer > div {
     border: none;
 }
 
-.width-full {
-    width: 100%;
-}
-
 .button:hover {
     background: #f22e4e;
 }
 
-label {
-    margin-top: 12px;
-}
+/*Table */
 
 /* Always display scrollbar on mobile */
 .table-responsive::-webkit-scrollbar {
@@ -205,7 +190,6 @@ label {
     background-color: #ffffff;
 }
 
-/* Table */
 .headline-table {
     font-size: 18px;
     font-weight: normal;
@@ -234,20 +218,6 @@ td {
     padding: 9px 9px 12px 9px !important;
 }
 
-.checkbox {
-    margin-right: 9px !important;
-    margin-left: 6px !important;
-}
-
-input[type=checkbox] {
-    z-index: 1;
-    -ms-transform: scale(2.4); /* IE */
-    -moz-transform: scale(2.4); /* FF */
-    -webkit-transform: scale(2.4); /* Safari and Chrome */
-    -o-transform: scale(2.4); /* Opera */
-    transform: scale(2.4);
-}
-
 table input[type=checkbox] {
     position: relative;
     top: 3px;
@@ -271,7 +241,13 @@ table input[type=checkbox] {
     font-weight: bold;
 }
 
-.icon-register-courses {
+/* Exams */
+.nav-link.active {
+    color: white !important;
+    background: #E1003A !important;
+}
+
+.icon-enroll-courses {
     position: relative;
     top: 2px;
     display: inline-block;
@@ -281,14 +257,11 @@ table input[type=checkbox] {
     font-weight: normal;
 }
 
-/* Exams */
-.nav-link.active {
-    color: white !important;
-    background: #E1003A !important;
-}
 
-/* MOBILE */
-@media (max-width: 992px) {
+/* RESPONSIVE */
+
+/* Mobile */
+@media (max-width: 992.98px) {
 
     nav ul li:not(:last-child) {
         border-bottom: #40464b 2px solid;
@@ -303,7 +276,7 @@ table input[type=checkbox] {
     }
 }
 
-/* DESKTOP */
+/* Desktop */
 @media (min-width: 993px) {
     #nav-profile-mobile {
         display: inline-block;
@@ -315,4 +288,38 @@ table input[type=checkbox] {
         display: none;
     }
 
+}
+
+/* Exceptions */
+@media (max-width: 575.98px) {
+    .button-table-search {
+        width: 100% !important;
+    }
+
+    .button-table-search > input {
+        width: 100% !important;
+    }
+
+    .button-exams-table {
+        width: 100% !important;
+    }
+}
+
+@media (min-width: 576px) {
+    .button-table-search {
+        width: 240px;
+    }
+
+    .button-table-search > input {
+        width: 192px !important;
+    }
+
+    .buttons-distribution-table {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: stretch;
+    }
 }

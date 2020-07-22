@@ -1,0 +1,38 @@
+<div class="modal fade" id="modalEnrollCourses" tabindex="-1" role="dialog"
+     aria-labelledby="modalEnrollCoursesCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Are you sure?</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+            <div class="modal-body">
+                <p>Do you really want to register the following courses? The registration is
+                    binding, but conditionally until the end of the registration period at the
+                    28.05.2020.
+                    Please, closely check your entries after enrolling and deregistering courses. </p>
+                <ol>
+                    <li>App Design</li>
+                    <li>App Design</li>
+                    <li>App Design</li>
+                    <li>App Design</li>
+                    <li>App Design</li>
+                </ol>
+                <label>
+                    <input class="checkbox" type="checkbox" value="remember-me"> I have read the hints
+                    and accept the conditions.
+                </label>
+            </div>
+        </div>
+
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Abort</button>
+            <button type="submit" class="button-small" value="Send" onclick="return enrollCourses()">
+                Enroll Courses
+            </button>
+        </div>
+    </div>
+</div>

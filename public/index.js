@@ -3,9 +3,21 @@ $(function () {
     $("#nav-placeholder").load("nav.html");
 });
 
+// Footer on multiple pages
 $(function () {
     $("#footer-placeholder").load("footer.html");
 });
+
+// Outsource deregister courses modal
+$(function () {
+    $("#modal-deregister-courses-placeholder").load("modal-deregister-courses.html");
+});
+
+// Outsource enroll courses modal
+$(function () {
+    $("#modal-enroll-courses-placeholder").load("modal-enroll-courses.html");
+});
+
 
 // Link to Login Page
 function login() {
@@ -37,14 +49,14 @@ function linkToExamRegistration() {
     return false;
 }
 
-// Register Courses
+// Deregister Courses
 function deregisterCourses() {
     // TODO implement logic
     linkToExams();
 }
 
-// Deregister Courses
-function registerCourses() {
+// Enroll Courses
+function enrollCourses() {
     // TODO implement logic
     linkToExams();
 }
