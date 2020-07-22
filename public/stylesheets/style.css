@@ -255,10 +255,6 @@ table input[type=checkbox] {
     font-size: 18px;
 }
 
-.nav-link:first-child {
-    margin-right: 18px;
-}
-
 .nav-link.active {
     font-size: 18px;
     color: white !important;
@@ -344,5 +340,9 @@ table input[type=checkbox] {
         justify-content: space-between;
         align-items: center;
         align-content: stretch;
+    }
+
+    .nav-link:first-child {
+        margin-right: 18px;
     }
 }

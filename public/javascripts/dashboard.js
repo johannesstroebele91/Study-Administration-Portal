@@ -1,5 +1,5 @@
 // Chart.js Global Styling Options
-Chart.defaults.global.defaultFontFamily = 'Lato';
+Chart.defaults.global.defaultFontFamily = 'Open Sans';
 Chart.defaults.global.defaultFontsize = 18;
 Chart.defaults.global.defaultFontColor = '#777';
 
@@ -8,7 +8,7 @@ let barChartStudyProgress = document.getElementById('barChartStudyProgress').get
 let BarChartStudyProgress = new Chart(barChartStudyProgress, {
     type: 'horizontalBar',
     data: {
-        labels: ["Mandatory Modules", "Internship", "Thesis", "Elective Mandatory Modules"],
+        labels: ["Mandatory Courses", "Internship", "Thesis", "Elective Mandatory Courses"],
         datasets: [{
             label: "Completed ECTS",
             backgroundColor: "rgba(46,204,113,0.5)",
