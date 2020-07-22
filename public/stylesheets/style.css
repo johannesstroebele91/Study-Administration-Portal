@@ -25,7 +25,7 @@ a {
 }
 
 .container {
-    max-width: 900px!important;
+    max-width: 900px !important;
 }
 
 .width-full {
@@ -119,7 +119,7 @@ footer > div {
     border-radius: 3px;
     color: white;
     border: none;
-    white-space:nowrap;
+    white-space: nowrap;
 }
 
 .button-small {
@@ -129,7 +129,7 @@ footer > div {
     border-radius: 3px;
     color: white !important;
     border: none;
-    white-space:nowrap;
+    white-space: nowrap;
 }
 
 .button-white {
@@ -139,10 +139,10 @@ footer > div {
     border: 2px solid #E1003A;
     border-radius: 3px;
     color: #E1003A !important;
-    white-space:nowrap;
+    white-space: nowrap;
 }
 
-.button-white > img{
+.button-white > img {
     padding-right: 6px;
 }
 
@@ -205,7 +205,7 @@ footer > div {
 .headline-table {
     font-size: 18px;
     font-weight: normal;
-    white-space:nowrap;
+    white-space: nowrap;
     margin-right: 12px;
 }
 
@@ -233,7 +233,7 @@ td {
 table input[type=checkbox] {
     position: relative;
     top: 3px;
-    left: 27px;
+    left: 15px;
 
 }
 
@@ -258,6 +258,7 @@ table input[type=checkbox] {
     border-bottom: 3px solid #ececec;
     border-radius: 3px;
 }
+
 .nav-link {
     font-size: 18px;
 }
@@ -272,7 +273,6 @@ table input[type=checkbox] {
     background: #E1003A !important;
 }
 
-
 .icon-enroll-courses {
     position: relative;
     top: 2px;
@@ -285,9 +285,49 @@ table input[type=checkbox] {
 }
 
 .section-headline {
-    white-space:nowrap;
+    white-space: nowrap;
 }
 
+.bg-table-header-mandatory-courses {
+    background: #9b59b6 !important;
+    color: white;
+}
+
+.bg-table-header-specializations {
+    background: #2ecc71 !important;
+    color: white;
+}
+
+.bg-table-header-projects {
+    background: #5eb2e7 !important;
+    color: white;
+}
+
+.bg-row-mandatory-courses {
+    border-left: 9px solid #b65bcb !important;
+}
+
+
+.bg-row-specializations {
+    border-left: 9px solid #59e29a !important;
+}
+
+.bg-row-projects {
+    border-left: 9px solid #61b6eb !important;
+}
+
+
+.font-color-td-specializations {
+    color: #00ab51 !important;
+}
+
+.font-color-td-projects {
+    color: #0a8adc !important;
+}
+
+.font-color-td-mandatory-courses {
+    color: #9a39ba !important;
+}
 
 /* RESPONSIVE */
 

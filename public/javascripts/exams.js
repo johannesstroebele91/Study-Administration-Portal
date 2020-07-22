@@ -1,5 +1,6 @@
-// Hiding table enroll in sections based on user preferences
 $(document).ready(function(){
+
+    // Hiding sections for enroll in tab based on user preferences
     $("#hide-section-mandatory-courses").click(function(){
         $(".section-mandatory-courses").hide();
     });
@@ -12,6 +13,7 @@ $(document).ready(function(){
         $(".section-projects").hide();
     });
 
+    // Button for showing them again
     $("#show-sections").click(function(){
         $(".section-mandatory-courses, .section-specializations, .section-projects").show();
     });
