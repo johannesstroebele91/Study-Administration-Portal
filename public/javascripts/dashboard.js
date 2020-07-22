@@ -8,17 +8,17 @@ let barChartStudyProgress = document.getElementById('barChartStudyProgress').get
 let BarChartStudyProgress = new Chart(barChartStudyProgress, {
     type: 'horizontalBar',
     data: {
-        labels: ["Mandatory Courses", "Internship", "Thesis", "Elective Mandatory Courses"],
+        labels: ["Mandatory Courses", "Internship", "Thesis", "Specialisations", "Projects"],
         datasets: [{
             label: "Completed ECTS",
-            backgroundColor: "rgba(46,204,113,0.5)",
+            backgroundColor: ["#8459b6", "#b65795", "#b65266", "#2ecc71", "#3498db"],
             hoverBackgroundColor: "rgb(19,163,78)",
-            data: [96, 30, 0, 43],
+            data: [96, 30, 0, 20, 25],
         }, {
             label: "Remaining ECTS",
             backgroundColor: "rgba(206,206,206,0.5)",
             hoverBackgroundColor: "rgb(170,170,170)",
-            data: [0,0,12,29]
+            data: [0,0,12,17, 10]
         }]
     },
     options: {
