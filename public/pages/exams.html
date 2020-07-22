@@ -55,17 +55,20 @@
             <p>This table lists the <b>courses that you have registered</b> for Information Design
                 in the current summer semester 2020.You can <b>deregister a courses</b>
                 by selecting it from the list below and clicking on the button "Deregister Selected Courses".</p>
-            <div class="my-2 buttons-distribution-table">
-                <form class="form-inline button-table-search my-2">
-                    <input class="form-control" type="search" placeholder="Search Course" aria-label="Search">
-                    <button class="icon" type="submit"><img src="../assets/search.png" height="21px" alt="Search icon">
+            <div class="my-2">
+                <div class="buttons-distribution-table">
+                    <form class="form-inline button-table-search my-2">
+                        <input class="form-control" type="search" placeholder="Search Course" aria-label="Search">
+                        <button class="icon" type="submit"><img src="../assets/search.png" height="21px"
+                                                                alt="Search icon">
+                        </button>
+                    </form>
+                    <button class="button-exams-table my-2" data-toggle="modal" type="submit"
+                            data-target="#modalDeregisterCourses">
+                        <img src="../assets/delete.png" height="21px" alt="Delete icon">
+                        <span>Deregister 3 Selected Courses</span>
                     </button>
-                </form>
-                <button class="button-exams-table my-2" data-toggle="modal" type="submit"
-                        data-target="#modalDeregisterCourses">
-                    <img src="../assets/delete.png" height="21px" alt="Delete icon">
-                    <span>Deregister 3 Selected Courses</span>
-                </button>
+                </div>
                 <div id="modal-deregister-courses-placeholder"></div>
             </div>
 
@@ -145,18 +148,20 @@
             <p>These are the <b>courses that you can enroll</b> for Information Design
                 in the current summer semester 2020. You can <b>enroll a courses</b>
                 by selecting it from the list below and clicking on the button "Enroll Selected Courses".</p>
-            <div class="my-2 buttons-distribution-table">
-                <form class="form-inline button-table-search my-2">
-                    <input class="form-control" type="search" placeholder="Search Course" aria-label="Search">
-                    <button class="icon" type="submit">
-                        <img src="../assets/search.png" height="21px" alt="Search icon">
+            <div class="my-2">
+                <div class="buttons-distribution-table">
+                    <form class="form-inline button-table-search my-2">
+                        <input class="form-control" type="search" placeholder="Search Course" aria-label="Search">
+                        <button class="icon" type="submit">
+                            <img src="../assets/search.png" height="21px" alt="Search icon">
+                        </button>
+                    </form>
+                    <button class="button-exams-table my-2" type="submit" data-toggle="modal"
+                            data-target="#modalEnrollCourses">
+                        <span class="icon-enroll-courses">+</span>
+                        <span>Register 4 Selected Courses</span>
                     </button>
-                </form>
-                <button class="button-exams-table my-2" type="submit" data-toggle="modal"
-                        data-target="#modalEnrollCourses">
-                    <span class="icon-enroll-courses">+</span>
-                    <span>Register 4 Selected Courses</span>
-                </button>
+                </div>
                 <div id="modal-enroll-courses-placeholder"></div>
             </div>
 
