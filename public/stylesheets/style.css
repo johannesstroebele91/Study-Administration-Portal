@@ -284,6 +284,10 @@ table input[type=checkbox] {
     color: white !important;
 }
 
+.section-headline {
+    white-space:nowrap;
+}
+
 
 /* RESPONSIVE */
 
@@ -323,19 +327,6 @@ table input[type=checkbox] {
         display: none;
     }
 }
-@media (max-width: 575.98px) {
-    .button-table-search {
-        width: 100% !important;
-    }
-
-    .button-table-search > input {
-        width: 100% !important;
-    }
-
-    .button-small, .button-white {
-        width: 100% !important;
-    }
-}
 
 @media (min-width: 576px) {
     .button-table-search {
@@ -344,15 +335,6 @@ table input[type=checkbox] {
 
     .button-table-search > input {
         width: 192px !important;
-    }
-
-    .buttons-distribution-table {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        align-items: center;
-        align-content: stretch;
     }
 
     .nav-link:first-child {
@@ -367,5 +349,30 @@ table input[type=checkbox] {
         align-items: center;
         align-content: stretch;
 
+    }
+}
+
+@media (min-width: 768px) {
+    .buttons-distribution-table {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: stretch;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .button-table-search {
+        width: 100% !important;
+    }
+
+    .button-table-search > input {
+        width: 100% !important;
+    }
+
+    .button-small, .button-white {
+        width: 100% !important;
     }
 }
