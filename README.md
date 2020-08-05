@@ -1,6 +1,6 @@
 # HdM Study Administration Portal
 
-This project was developed for the course "334050 Mobile Medien" of [Prof. Dr. Jörg Westbomke](mailto:westbomke@hdm-stuttgart.de?subject=[GitHub]HdM Study Adminstration Portal) at the Stuttgart Media University. The web application was developed by [Johannes](https://github.com/johannesstroebele91).
+This project was developed for the course "334050 Mobile Medien" of [Prof. Dr. Jörg Westbomke](mailto:westbomke@hdm-stuttgart.de?subject=[GitHub]HdMStudyAdminstrationPortal) at the Stuttgart Media University. The web application was developed by [Johannes](https://github.com/johannesstroebele91).
 
 ## Project Goal
 The goal is to develop an exam registration page that enables students to easily register and view exams not only on desktop, but tablet and mobile devices. Therefore, a web application will be developed focusing the following factors:
@@ -28,7 +28,7 @@ _The files in this repository have the following purpose:_
 - .gitignore: text file that tells Git which files or folders to ignore in a project
 
 ## Software Architecture
-_This is the current software architecture:
+_This is the current software architecture:_
 ![image](https://user-images.githubusercontent.com/33202527/89467374-bcfc0580-d775-11ea-8760-4818ab4285f3.png)
 
 ## Lessons Learned
