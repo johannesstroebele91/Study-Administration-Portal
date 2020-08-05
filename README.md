@@ -9,6 +9,19 @@ First, a responsive layout will be coded for the exam registration page using Bo
 
 If there is time left, the other pages of the study administration portal will be created (e. g. implementing a login page). Also, the information architecture will be reworked, and a navigation implemented. Finally, the visual aesthetical design of the application will be improved (e. g. colors, whitespace, typography).
 
+## Wiki Overview
+_The wiki links are shown below:_
+
+1. [Home](https://github.com/johannesstroebele91/HdM_StudyAdministration/wiki)
+2. [Problem Statement](https://github.com/johannesstroebele91/HdM_StudyAdministration/wiki/Problem-Statement)
+3. [Project Goal](https://github.com/johannesstroebele91/HdM_StudyAdministration/wiki/Project-Goal)
+4. [Technology Stack](https://github.com/johannesstroebele91/HdM_StudyAdministration/wiki/Technology-Stack)
+5. [Solution Approach](https://github.com/johannesstroebele91/HdM_StudyAdministration/wiki/Solution-Approach)
+6. [Concept](https://github.com/johannesstroebele91/HdM_StudyAdministration/wiki/Concept)
+7. [Development](https://github.com/johannesstroebele91/HdM_StudyAdministration/wiki/Development)
+8. [Application](https://github.com/johannesstroebele91/HdM_StudyAdministration/wiki/Application)
+9. [Conclusion](https://github.com/johannesstroebele91/HdM_StudyAdministration/wiki/Conclusion)
+
 ## Repository Structure
 _The files in this repository have the following purpose:_
 
