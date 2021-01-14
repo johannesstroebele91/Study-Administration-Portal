@@ -1,6 +1,8 @@
 # HdM Study Administration Portal
 
-This project was developed for the course "334050 Mobile Medien" of [Prof. Dr. Jörg Westbomke](mailto:westbomke@hdm-stuttgart.de?subject=[GitHub]HdMStudyAdminstrationPortal) at the Stuttgart Media University. The web application was developed by [Johannes](https://github.com/johannesstroebele91).
+This project was developed for the course "334050 Mobile Medien" of [Prof. Dr. Jörg Westbomke](mailto:westbomke@hdm-stuttgart.de?subject=[GitHub]HdMStudyAdminstrationPortal) at the Stuttgart Media University. The web application was developed by [Johannes](https://github.com/johannesstroebele91). The web application can be accessed via the following link using the test email “admin@gmail.com” and test password “password”:
+
+https://hdm-study-administration.herokuapp.com/ (needs to load due to Heroku)
 
 ## Project Goal
 The goal is to develop an exam registration page that enables students to easily register and view exams not only on desktop, but tablet and mobile devices. Therefore, a web application will be developed focusing the following factors:
